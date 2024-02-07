@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css"/>
+   
+ 
+</head>
+
+<body>
+        <div class="Obszar">
+            <audio id="audio" autoplay loop>
+                <source src="Toothless Dancing Meme [NEW VARIATIONS].mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="obramowanieL"></div>
+            <section1>
+                <img class="ZL" src="flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg">
+                <video class="Film1" autoplay muted loop>
+                    <source src="El Gato In My Mind.mp4" type="video/mp4">
+                </video>
+                
+                <img class="ZR"  src="flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg">
+            </section1>
+            <h1>Martyna czy zostaniesz moją walentynką?!?!?!?!?!?</h1>
+            <section>
+                <button onclick="redirectToNewPage()" class="TAK">TAK</button>
+                <div class="button-container">
+                    <button class="NIE">NIE</button>
+                </div>
+            </section>
+        </div>
+</body>
+<script>
+    document.querySelector('.NIE').addEventListener('mouseenter', function() {
+        const container = document.querySelector('.button-container');
+        const maxX = container.clientWidth - this.offsetWidth;
+        const maxY = container.clientHeight - this.offsetHeight;
+
+        const newX = Math.random() * maxX;
+        const newY = Math.random() * maxY;
+
+        this.style.left = `${Math.max(0, Math.min(newX, maxX))}px`;
+        this.style.top = `${Math.max(0, Math.min(newY, maxY))}px`;
+    });
+
+    function redirectToNewPage(){
+            
+    }
+</script>
+
+
+
+
+
+
+
+
+</html>
